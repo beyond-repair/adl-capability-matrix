@@ -4,17 +4,28 @@
 
 Deterministic **cluster + claim-cap** matrix. Snapshot is **dated**, not a live SLA.
 
+## Sweep-115 lock
+
+| Field | Value |
+|-------|--------|
+| Classification | RESEARCH |
+| Live search census | 75 (`user:beyond-repair`, incomplete_results=false) |
+| Locked JSON rows | 67 (2026-09-04) |
+| Row expansion this sweep | NOT DONE (would invent caps) |
+| Last listed product CI | 33932359958 success |
+| Post-lock CI | PENDING |
+
 ## What this repository claims
 
 - 67 public repositories were enumerated from GitHub search `user:beyond-repair` on **2026-09-04**.
-- Each repository is assigned a **cluster** and a **claim_cap** from metadata only (name, description, approximate size).
-- A **compatible-build queue** lists systems that are compatible with existing work and are **not** claimed as already built (except `Q-001`, this repo).
-- Validator + tests + CI enforce legal claim caps only.
+- Each of those 67 is assigned a **cluster** and a **claim_cap** from metadata only.
+- A **compatible-build queue** lists systems compatible with existing work and **not** claimed as already built (except `Q-001`, this repo).
+- Validator + tests + listed CI enforce legal claim caps only.
 
 ## What this repository does not claim
 
-- Currency with the live portfolio census (**75** items observed Sweep-098/099). Inventory refresh is **OPEN** (see `CLAIM_STATUS.md`).
-- Per-function inventories of every repository (not performed; would require AST/read of every default-branch tree).
+- Currency with the live portfolio census (**75** items, Sweep-115). Inventory refresh is **OPEN**.
+- Per-function inventories of every repository.
 - Runtime interoperability of Sunder, SEEM, VSA, or CFT stacks.
 - Physical correctness of Coherence Drive / Ware Constant artifacts.
 - That duplicate Digital Double / SEEM repos are equivalent.
@@ -35,13 +46,4 @@ pip install -r requirements.txt
 python -m pytest -q
 ```
 
-CI: `.github/workflows/ci.yml` — latest green run on head `84c57f26` (run 33932359958).
-
-## Related
-
-- `ADL-Portfolio-Census` — locked inventory protocol
-- `aegis-repo-graph` — FLS artifact graph
-- `ADL-Governance` — portfolio constitution
-- `forge-aegis` — FLS / AEGIS ontology
-
-See `CLAIM_STATUS.md`.
+See `CLAIM_STATUS.md` and `GOVERNANCE.md`.
