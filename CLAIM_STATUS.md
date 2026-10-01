@@ -33,4 +33,4 @@ Sweep-175 reconfirmed live GitHub search `user:beyond-repair` **total_count=82**
 
 ## CI
 
-Prior listed product workflow on `main`: run **33932359958** conclusion **success** (2026-09-05). Actions conclusion after the Sweep-175 push is **NOT observed** in this pass.
+Prior listed product workflow on `main`: run **33932359958** conclusion **success** (2026-09-05). Actions conclusion after the Sweep-175 push: run **36889001703** conclusion **success** on `e57ec52`.

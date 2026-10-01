@@ -18,7 +18,7 @@
 - `matrix/capability_matrix.json` — locked inventory_count **67** (2026-09-04 snapshot).
 - `matrix/census_gap_2026-10-01.json` — 82 observed names; 15 unassigned; 0 extras.
 - `matrix/load.py` + tests — deterministic load/validate plus gap set-difference.
-- CI workflow present (pytest on push to `main`). Post-push conclusion not observed this pass.
+- CI workflow present (pytest on push to `main`). Post-push conclusion: run **36889001703** success on `e57ec52`.
 
 ## Allowed agent actions
 

@@ -31,7 +31,7 @@ Deterministic **cluster + claim-cap** matrix. Snapshot is **dated**, not a live 
 | Names in locked rows absent from live search | 0 |
 | Row expansion with caps | NOT DONE (would invent caps) |
 | Local tests this sweep | 8 passed (6 prior + 2 gap) |
-| Post-push CI | NOT observed |
+| Post-push CI | **success** [36889001703](https://github.com/beyond-repair/adl-capability-matrix/actions/runs/36889001703) on `e57ec52` |
 
 ## What this repository claims
 
