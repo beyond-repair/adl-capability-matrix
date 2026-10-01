@@ -7,7 +7,7 @@
 ```
 LIFECYCLE   RESEARCH
 CLAIM       ≤1
-NOT CLAIMED thrust · energy extraction · AGI · production autonomy
+NOT CLAIMED thrust · energy extraction · AGI · production autonomy · live SLA
 ```
 
 </div>
@@ -20,33 +20,36 @@ NOT CLAIMED thrust · energy extraction · AGI · production autonomy
 
 Deterministic **cluster + claim-cap** matrix. Snapshot is **dated**, not a live SLA.
 
-## Sweep-115 lock
+## Sweep-175 re-audit
 
 | Field | Value |
 |-------|--------|
-| Classification | RESEARCH |
-| Live search census | 75 (`user:beyond-repair`, incomplete_results=false) |
-| Locked JSON rows | 67 (2026-09-04) |
-| Row expansion this sweep | NOT DONE (would invent caps) |
-| Last listed product CI | 33932359958 success |
-| Post-lock CI | PENDING |
+| Classification | RESEARCH (unchanged; not promoted) |
+| Locked JSON rows | 67 (2026-09-04 snapshot; not expanded) |
+| Live search census | 82 (`user:beyond-repair`, `incomplete_results=false`, 2026-10-01) |
+| Names in live search absent from locked rows | 15 (name-only gap file; cluster and cap left null) |
+| Names in locked rows absent from live search | 0 |
+| Row expansion with caps | NOT DONE (would invent caps) |
+| Local tests this sweep | 8 passed (6 prior + 2 gap) |
+| Post-push CI | NOT observed |
 
 ## What this repository claims
 
-- 67 public repositories were enumerated from GitHub search `user:beyond-repair` on **2026-09-04**.
+- 67 repositories were enumerated from GitHub search `user:beyond-repair` on **2026-09-04**.
 - Each of those 67 is assigned a **cluster** and a **claim_cap** from metadata only.
 - A **compatible-build queue** lists systems compatible with existing work and **not** claimed as already built (except `Q-001`, this repo).
-- Validator + tests + listed CI enforce legal claim caps only.
+- Sweep-175 records the set difference between that locked inventory and a 2026-10-01 search of 82 names. Missing names are `UNASSIGNED`. That is presence accounting, not a capability audit.
+- Validator + tests + CI enforce legal claim caps on the locked rows only.
 
 ## What this repository does not claim
 
-- Currency with the live portfolio census (**75** items, Sweep-115). Inventory refresh is **OPEN**.
+- Currency of cluster/cap rows with the live portfolio census (**82** items, Sweep-175). Cap refresh remains **OPEN**.
 - Per-function inventories of every repository.
 - Runtime interoperability of Sunder, SEEM, VSA, or CFT stacks.
 - Physical correctness of Coherence Drive / Ware Constant artifacts.
 - That duplicate Digital Double / SEEM repos are equivalent.
 
-Claim caps (locked):
+Claim caps (locked rows only):
 
 | Cap | Meaning |
 |---|---|
@@ -54,6 +57,8 @@ Claim caps (locked):
 | METADATA_ONLY | Scaffold / tiny tree |
 | SURFACE_API_UNVERIFIED | Partial tree; APIs not audited |
 | TREE_PRESENT_FUNCTIONS_UNAUDITED | Larger tree; functions not inventoried |
+
+Gap file: `matrix/census_gap_2026-10-01.json`.
 
 ## Run tests
 
@@ -63,7 +68,6 @@ python -m pytest -q
 ```
 
 See `CLAIM_STATUS.md` and `GOVERNANCE.md`.
-
 
 ---
 
