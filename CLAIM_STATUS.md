@@ -31,6 +31,10 @@
 
 Sweep-175 reconfirmed live GitHub search `user:beyond-repair` **total_count=82** (`incomplete_results=false`). Missing names: ADL-Nexus, Open-Energy-Fusion, Sovereign-Epistemic-Reality-Engine, adl-capability-matrix, adl-function-census, atomicdreamlabs, bloch-coherence-factor2, finite-gasket-spectral-derivatives, informational-flux-identity, mend, mendthegame, os-family-constitution-map, seem-identity-unifier, seem-sunder-bridge, sunder-cleanroom-vsa-adapter. Expanding rows with caps remains **OPEN**. Do not invent cluster/cap assignments.
 
+## Checker
+
+The supported run path is `python -m matrix.engine` (same report as `python -m matrix`) after `pip install -e ".[dev]"`. It validates the locked JSON and the committed gap file only. It prints `rows=67 queue=5 gap_unassigned=15` and `OK` when they pass. It does not crawl GitHub, does not expand the 67 rows, and does not assign a cluster or claim cap to the 15 unassigned names. Package version `0.1.1` is the checker; the JSON `version` field remains the snapshot label `0.1.0`.
+
 ## CI
 
 Prior listed product workflow on `main`: run **33932359958** conclusion **success** (2026-09-05). Actions conclusion after the Sweep-175 push: run **36889001703** conclusion **success** on `e57ec52`.
