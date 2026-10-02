@@ -8,7 +8,7 @@
 
 | Feature | State |
 |---------|-------|
-| Deterministic load + validate of locked JSON matrix | VERIFIED (local pytest 8 passed this sweep; prior CI 33932359958 success) |
+| Deterministic load + validate of locked JSON matrix | VERIFIED (local pytest 16 passed (Finish repair); prior CI 33932359958 success) |
 | 67-row inventory snapshot from GitHub search `user:beyond-repair` on 2026-09-04 | VERIFIED as of that date only |
 | Claim caps restricted to NAME_ONLY / METADATA_ONLY / SURFACE_API_UNVERIFIED / TREE_PRESENT_FUNCTIONS_UNAUDITED | VERIFIED by `validate_matrix` |
 | Compatible-build queue exists with Q-001 = this repo IN_THIS_COMMIT | VERIFIED by tests |
@@ -30,6 +30,10 @@
 ## Drift note
 
 Sweep-175 reconfirmed live GitHub search `user:beyond-repair` **total_count=82** (`incomplete_results=false`). Missing names: ADL-Nexus, Open-Energy-Fusion, Sovereign-Epistemic-Reality-Engine, adl-capability-matrix, adl-function-census, atomicdreamlabs, bloch-coherence-factor2, finite-gasket-spectral-derivatives, informational-flux-identity, mend, mendthegame, os-family-constitution-map, seem-identity-unifier, seem-sunder-bridge, sunder-cleanroom-vsa-adapter. Expanding rows with caps remains **OPEN**. Do not invent cluster/cap assignments.
+
+## Checker
+
+The supported run path is `python -m matrix.engine` (same report as `python -m matrix`) after `pip install -e ".[dev]"`. It validates the locked JSON and the committed gap file only. It prints `rows=67 queue=5 gap_unassigned=15` and `OK` when they pass. It does not crawl GitHub, does not expand the 67 rows, and does not assign a cluster or claim cap to the 15 unassigned names. Package version `0.1.1` is the checker; the JSON `version` field remains the snapshot label `0.1.0`.
 
 ## CI
 

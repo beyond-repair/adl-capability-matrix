@@ -13,6 +13,8 @@
 - `matrix/census_gap_2026-10-01.json` may list names only. Null cluster and null claim_cap are mandatory for unassigned names.
 - Forbidden: claiming the matrix is complete, claiming per-function AST census, claiming runtime interop across clusters.
 
+- The runnable surface is `python -m matrix.engine` / `python -m matrix`. It checks the committed JSON. It is not a live portfolio crawl.
+
 ## Observed tree
 
 - `matrix/capability_matrix.json` — locked inventory_count **67** (2026-09-04 snapshot).
