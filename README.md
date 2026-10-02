@@ -101,7 +101,7 @@ Historical record. This repair does not expand the 67 rows and does not assign c
 | Names in live search absent from locked rows | 15 (name-only gap file; cluster and cap left null) |
 | Names in locked rows absent from live search | 0 |
 | Row expansion with caps | NOT DONE (would invent caps) |
-| Local tests this sweep | 8 passed (6 prior + 2 gap) |
+| Local tests this sweep | 8 passed (6 prior + 2 gap); Finish repair 16 passed |
 | Post-push CI | **success** [36889001703](https://github.com/beyond-repair/adl-capability-matrix/actions/runs/36889001703) on `e57ec52` |
 
 See `CLAIM_STATUS.md` and `GOVERNANCE.md`.

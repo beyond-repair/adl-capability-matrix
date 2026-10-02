@@ -8,7 +8,7 @@
 
 | Feature | State |
 |---------|-------|
-| Deterministic load + validate of locked JSON matrix | VERIFIED (local pytest 8 passed this sweep; prior CI 33932359958 success) |
+| Deterministic load + validate of locked JSON matrix | VERIFIED (local pytest 16 passed (Finish repair); prior CI 33932359958 success) |
 | 67-row inventory snapshot from GitHub search `user:beyond-repair` on 2026-09-04 | VERIFIED as of that date only |
 | Claim caps restricted to NAME_ONLY / METADATA_ONLY / SURFACE_API_UNVERIFIED / TREE_PRESENT_FUNCTIONS_UNAUDITED | VERIFIED by `validate_matrix` |
 | Compatible-build queue exists with Q-001 = this repo IN_THIS_COMMIT | VERIFIED by tests |
