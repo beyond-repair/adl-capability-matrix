@@ -21,7 +21,7 @@
 |-------|--------|
 | Matrix caps are complete for the current live portfolio | **UNSUPPORTED** — live search total_count **82**; JSON inventory_count locked at **67** |
 | The 15 missing names have a cluster or claim cap | **NOT ASSIGNED** (`cluster` and `claim_cap` are null) |
-| Per-function AST census of any repo | NOT PERFORMED |
+| Portfolio-wide per-function census | NOT PERFORMED — Sweep-210 audits only scale-functional-I test-executed names |
 | Runtime interop of Sunder / SEEM / VSA / CFT | NOT CLAIMED |
 | Physical correctness of Coherence Drive / Ware artifacts | NOT CLAIMED |
 | Equivalence of Digital Double or SEEM name forks | NOT CLAIMED |
@@ -42,3 +42,7 @@ Prior listed product workflow on `main`: run **33932359958** conclusion **succes
 ## Sweep-207 name observation (2026-10-02)
 
 Not a cap refresh. `matrix/census_gap_2026-10-02.json` records GitHub search `user:beyond-repair` `total_count=83`, `incomplete_results=false`. Set difference versus `census_gap_2026-10-01.json` is exactly `scale-functional-I` added and nothing removed. Missing-from-lock count is 16. `cluster` and `claim_cap` stay null. Locked inventory remains 67. `python -m matrix.engine` still reports the 2026-10-01 gap (`gap_unassigned=15`) and does not load the new file. Local pytest after this file: 18 passed. `scale-functional-I` was not function-audited in this pass.
+
+## Sweep-210 function audit (2026-10-03)
+
+Not a cap refresh. `matrix/function_audit_scale_functional_I.json` records the `scale-functional-I` head `9768280b4d6eb039defa7072cabf243f3e3740b2`. Tests import and execute `dumbbell_mask` and `perimeter` only. `main` is not executed by tests. `cluster` and `claim_cap` stay null. Locked inventory remains 67. Local witness: `python3 -m unittest tests.test_scale_functional` → 1 test OK. No continuum, selected W, thrust, or 0.08 comparison is claimed.

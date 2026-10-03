@@ -1,0 +1,32 @@
+{
+  "project": "adl-capability-matrix",
+  "kind": "function_audit",
+  "sweep": 210,
+  "observed_at": "2026-10-03",
+  "repo": "scale-functional-I",
+  "owner": "beyond-repair",
+  "default_branch": "main",
+  "head": "9768280b4d6eb039defa7072cabf243f3e3740b2",
+  "cluster": null,
+  "claim_cap": null,
+  "status": "UNASSIGNED",
+  "assignment_policy": "NO_CLUSTER_OR_CAP_INVENTED",
+  "locked_inventory_expanded": false,
+  "module": "scale_functional.py",
+  "module_functions": ["dumbbell_mask", "perimeter", "main"],
+  "executed_by_tests": ["dumbbell_mask", "perimeter"],
+  "not_executed_by_tests": ["main"],
+  "test_local_helpers": ["scale_I"],
+  "test_file": "tests/test_scale_functional.py",
+  "test_method": "ScaleFunctionalTests.test_strict_decrease_and_negative_beta",
+  "families_chamber_neck": [[8, 5], [10, 6]],
+  "witness": "On those two families, I = perimeter/sqrt(area) strictly decreases with neck width w, and finite-difference beta_I is negative. 0.08 is not an input.",
+  "local_test": "python3 -m unittest tests.test_scale_functional: 1 test OK",
+  "not_claimed": [
+    "continuum limit",
+    "selected W",
+    "thrust",
+    "comparison with 0.08",
+    "Seeley-DeWitt extraction (eigvalsh is imported and unused; tests do not call it)"
+  ]
+}
