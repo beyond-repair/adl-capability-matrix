@@ -38,3 +38,7 @@ The supported run path is `python -m matrix.engine` (same report as `python -m m
 ## CI
 
 Prior listed product workflow on `main`: run **33932359958** conclusion **success** (2026-09-05). Actions conclusion after the Sweep-175 push: run **36889001703** conclusion **success** on `e57ec52`.
+
+## Sweep-207 name observation (2026-10-02)
+
+Not a cap refresh. `matrix/census_gap_2026-10-02.json` records GitHub search `user:beyond-repair` `total_count=83`, `incomplete_results=false`. Set difference versus `census_gap_2026-10-01.json` is exactly `scale-functional-I` added and nothing removed. Missing-from-lock count is 16. `cluster` and `claim_cap` stay null. Locked inventory remains 67. `python -m matrix.engine` still reports the 2026-10-01 gap (`gap_unassigned=15`) and does not load the new file. Local pytest after this file: 18 passed. `scale-functional-I` was not function-audited in this pass.
