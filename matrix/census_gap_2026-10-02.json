@@ -1,0 +1,198 @@
+{
+  "project": "adl-capability-matrix",
+  "kind": "census_gap",
+  "sweep": 207,
+  "observed_at": "2026-10-02",
+  "source": "GitHub search user:beyond-repair",
+  "incomplete_results": false,
+  "live_total_count": 83,
+  "matrix_inventory_count": 67,
+  "matrix_snapshot_date": "2026-09-04",
+  "assignment_policy": "NO_CLUSTER_OR_CAP_INVENTED",
+  "prior_gap": "census_gap_2026-10-01.json",
+  "claim": "Name presence only. Absence from the locked 67-row matrix is not a maturity, cluster, or function claim. scale-functional-I is the only name added relative to the 2026-10-01 observed list.",
+  "observed_names": [
+    "-Entanglement-and-Emergence",
+    "-Py2APK-main",
+    "-text-informational-fork-protocol-",
+    "-ware-constant-derivation",
+    "ADL-Governance",
+    "ADL-Nexus",
+    "ADL-Portfolio-Census",
+    "ADL-SEEM",
+    "AEGIS-Project-Nehemiah-",
+    "Agent-Snake",
+    "AtomicNexusAI",
+    "Auto_Legion",
+    "BlockSwarm",
+    "CFT-v3.0",
+    "CFT-v3.1",
+    "CFTv3.3-IQG-Unified-Framework",
+    "Code_Generation_AI_Program",
+    "DevelopTool-Unified-Dev-Environment",
+    "Digital-Double_Mobile",
+    "DigitalDoubleVirtualWorkforce3.5",
+    "Digital_Double_Virtual_Workforce_4.",
+    "Digital_Double_Virtual_Workforce_4.2",
+    "Digital_Double_virtual_workforce",
+    "ExoAxis-1",
+    "FortiTrade_Multi-Strategy",
+    "Gia---General-Intelligence-Assistant",
+    "LegionOS",
+    "My-mind-A.I.",
+    "Open-Energy-Fusion",
+    "Project-Cold-Boot",
+    "Quantumclustering",
+    "RealityOS",
+    "RepoRover-",
+    "SEEM-2.0-Self-Evolving-Emergent-Mind",
+    "SEEM-Cognitive-Microservice",
+    "SEEM-Cognitive_Microservice",
+    "Sovereign-Epistemic-Reality-Engine",
+    "Sovereign-OS",
+    "SovereignOS",
+    "The-Origin-Point-Hypothesis.",
+    "VigilE.S.A.-Enhanced-Security",
+    "acoustic-token-modem",
+    "adl-capability-matrix",
+    "adl-function-census",
+    "aegis-repo-graph",
+    "atomicdreamlabs",
+    "automate_passive_income",
+    "beyond-repair",
+    "blacksite",
+    "bloch-coherence-factor2",
+    "btc-trading",
+    "coherence-drive",
+    "digital-double-mobile",
+    "fantom-smart-contracts-first-bot",
+    "fantom_trading_bot_2",
+    "finite-gasket-spectral-derivatives",
+    "forge-aegis",
+    "ftmA.I.bot",
+    "genieGPT",
+    "informational-flux-identity",
+    "m2-renormalization-law",
+    "mend",
+    "mendthegame",
+    "momentum-closure",
+    "new-program-1.01",
+    "optimization-limit-conjecture",
+    "os-family-constitution-map",
+    "potential-garbanzo",
+    "quantum_A.I._optimization.py",
+    "scale-functional-I",
+    "seem-block-system",
+    "seem-identity-unifier",
+    "seem-sunder-bridge",
+    "sierpinski-geometry-045",
+    "smart_home_BCI",
+    "sovereign-clean-room",
+    "stress-tensor-modification",
+    "sunder",
+    "sunder-cleanroom-vsa-adapter",
+    "test",
+    "thrust-target-30",
+    "topological-pinch",
+    "ware-constant-phenomenology"
+  ],
+  "missing_from_locked_matrix": [
+    {
+      "name": "ADL-Nexus",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "Open-Energy-Fusion",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "Sovereign-Epistemic-Reality-Engine",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "adl-capability-matrix",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "adl-function-census",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "atomicdreamlabs",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "bloch-coherence-factor2",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "finite-gasket-spectral-derivatives",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "informational-flux-identity",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "mend",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "mendthegame",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "os-family-constitution-map",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "scale-functional-I",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "seem-identity-unifier",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "seem-sunder-bridge",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    },
+    {
+      "name": "sunder-cleanroom-vsa-adapter",
+      "cluster": null,
+      "claim_cap": null,
+      "status": "UNASSIGNED"
+    }
+  ],
+  "in_matrix_not_in_live_search": []
+}
