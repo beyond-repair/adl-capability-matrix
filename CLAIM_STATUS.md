@@ -19,8 +19,8 @@
 
 | Claim | Status |
 |-------|--------|
-| Matrix caps are complete for the current live portfolio | **UNSUPPORTED** — live search total_count **82**; JSON inventory_count locked at **67** |
-| The 15 missing names have a cluster or claim cap | **NOT ASSIGNED** (`cluster` and `claim_cap` are null) |
+| Matrix caps are complete for the current live portfolio | **UNSUPPORTED** — live search total_count **83** (reconfirmed 2026-10-17); JSON inventory_count locked at **67** |
+| The 15+ missing names have a cluster or claim cap | **NOT ASSIGNED** (`cluster` and `claim_cap` are null) |
 | Portfolio-wide per-function census | NOT PERFORMED — Sweep-210 audits only scale-functional-I test-executed names |
 | Runtime interop of Sunder / SEEM / VSA / CFT | NOT CLAIMED |
 | Physical correctness of Coherence Drive / Ware artifacts | NOT CLAIMED |
@@ -38,6 +38,7 @@ The supported run path is `python -m matrix.engine` (same report as `python -m m
 ## CI
 
 Prior listed product workflow on `main`: run **33932359958** conclusion **success** (2026-09-05). Actions conclusion after the Sweep-175 push: run **36889001703** conclusion **success** on `e57ec52`.
+Latest observed CI (2026-10-03): run **37139442180** conclusion **success** on `b3b6412`.
 
 ## Sweep-207 name observation (2026-10-02)
 
@@ -46,3 +47,7 @@ Not a cap refresh. `matrix/census_gap_2026-10-02.json` records GitHub search `us
 ## Sweep-210 function audit (2026-10-03)
 
 Not a cap refresh. `matrix/function_audit_scale_functional_I.json` records the `scale-functional-I` head `9768280b4d6eb039defa7072cabf243f3e3740b2`. Tests import and execute `dumbbell_mask` and `perimeter` only. `main` is not executed by tests. `cluster` and `claim_cap` stay null. Locked inventory remains 67. Local witness: `python3 -m unittest tests.test_scale_functional` → 1 test OK. No continuum, selected W, thrust, or 0.08 comparison is claimed.
+
+## Sweep-409 name observation (2026-10-17)
+
+Not a cap refresh. Live GitHub search `user:beyond-repair` reconfirmed `total_count=83`, `incomplete_results=false`. Set difference versus the 2026-10-02 observed list is empty (no names added or removed). Missing-from-lock count remains 16. `cluster` and `claim_cap` stay null. Locked inventory remains 67. Engine continues to report the 2026-10-01 gap. Classification remains RESEARCH. No claim elevation.
