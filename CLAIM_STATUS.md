@@ -21,7 +21,7 @@
 |-------|--------|
 | Matrix caps are complete for the current live portfolio | **UNSUPPORTED** — live search total_count **83** (reconfirmed 2026-10-26); JSON inventory_count locked at **67** |
 | The 15+ missing names have a cluster or claim cap | **NOT ASSIGNED** (`cluster` and `claim_cap` are null) |
-| Portfolio-wide per-function census | NOT PERFORMED — Sweep-210 audits scale-functional-I; Sweep-529 audits Digital_Double_virtual_workforce core methods only; Sweep-532 audits informational-flux-identity core methods only |
+| Portfolio-wide per-function census | NOT PERFORMED — Sweep-210 audits scale-functional-I; Sweep-529 audits Digital_Double_virtual_workforce core methods only; Sweep-532 audits informational-flux-identity core methods only; Sweep-533 audits finite-gasket-spectral-derivatives kernel methods only |
 | Runtime interop of Sunder / SEEM / VSA / CFT | NOT CLAIMED |
 | Physical correctness of Coherence Drive / Ware artifacts | NOT CLAIMED |
 | Equivalence of Digital Double or SEEM name forks | NOT CLAIMED |
@@ -55,3 +55,7 @@ Not a cap elevation. `matrix/function_audit_Digital_Double_virtual_workforce.jso
 ## Sweep-532 function audit (2026-10-26)
 
 Not a cap assignment or elevation. `matrix/function_audit_informational_flux_identity.json` records head `cec4aff731cef6bb581c318f736de79d68d90b1f`. Tests execute potential, fluxes, divergence, and ledger on the integer rectangle witness. Asserts signed boundary flux equals summed divergence. Exact integer arithmetic only. `cluster` and `claim_cap` remain null. Locked inventory remains 67. Name stays in unassigned gap. No continuum, selected W, or thrust claimed.
+
+## Sweep-533 function audit (2026-10-26)
+
+Not a cap assignment or elevation. `matrix/function_audit_finite_gasket_spectral_derivatives.json` records head `fdaaacb346b2ce7d23436437dac42ad3827fa864`. Tests execute require_positive, gamma_loop, dgamma_dw, and v_second on sample eigenvalues. Confirms spectral wall guard, derivative agreement with finite differences, and lambda=6 split. `cluster` and `claim_cap` remain null. Locked inventory remains 67. Name stays in unassigned gap. No continuum, selected W, or force claimed.
