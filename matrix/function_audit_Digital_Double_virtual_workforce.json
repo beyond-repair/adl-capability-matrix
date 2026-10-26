@@ -1,0 +1,30 @@
+{
+  "project": "adl-capability-matrix",
+  "kind": "function_audit",
+  "sweep": 529,
+  "observed_at": "2026-10-26",
+  "repo": "Digital_Double_virtual_workforce",
+  "owner": "beyond-repair",
+  "default_branch": "main",
+  "head": "ad0c3bd7328a9e7917b8f6ac0143a4f68429ebea",
+  "cluster": "digital_double",
+  "claim_cap": "TREE_PRESENT_FUNCTIONS_UNAUDITED",
+  "status": "ASSIGNED_IN_LOCKED_MATRIX",
+  "assignment_policy": "EXISTING_CAP_NOT_ELEVATED",
+  "locked_inventory_expanded": false,
+  "module": "digital_double/core/agent.py",
+  "module_functions": ["Agent.__post_init__", "Agent.assign_task", "Agent.complete_task", "Agent.get_model_name", "Agent.get_system_prompt"],
+  "executed_by_tests": ["Agent.__post_init__", "Agent.assign_task", "Agent.complete_task", "Agent.get_model_name", "Agent.get_system_prompt", "Orchestrator.create_agent", "Orchestrator.create_task"],
+  "not_executed_by_tests": ["LLM inference", "model API calls", "nested digital_double/digital_double package", "React UI components", "examples/basic_usage.py main path"],
+  "test_files": ["tests/test_agent.py", "tests/test_orchestrator.py", "tests/test_task.py", "tests/test_orchestrator_smoke.py"],
+  "test_methods_exercised": ["test_agent_creation", "test_agent_task_assignment", "test_agent_task_completion", "test_agent_task_failure", "test_busy_agent_assignment", "test_agent_prompt"],
+  "witness": "Pytest suite exercises Agent status transitions, task assignment/completion, performance metrics, model name and system prompt retrieval. No network or LLM provider calls are performed. get_model_name returns the static string from prompts.",
+  "local_test": "pytest (assumed green per prior CI; not re-run in this pass)",
+  "not_claimed": [
+    "working LLM-backed agent runtime",
+    "production workforce SLA",
+    "integration with external model providers",
+    "claim_cap elevation beyond TREE_PRESENT_FUNCTIONS_UNAUDITED",
+    "full function census of the repository"
+  ]
+}
