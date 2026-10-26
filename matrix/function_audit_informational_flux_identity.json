@@ -1,0 +1,31 @@
+{
+  "project": "adl-capability-matrix",
+  "kind": "function_audit",
+  "sweep": 532,
+  "observed_at": "2026-10-26",
+  "repo": "informational-flux-identity",
+  "owner": "beyond-repair",
+  "default_branch": "main",
+  "head": "cec4aff731cef6bb581c318f736de79d68d90b1f",
+  "cluster": null,
+  "claim_cap": null,
+  "status": "UNASSIGNED",
+  "assignment_policy": "NO_CLUSTER_OR_CAP_INVENTED",
+  "locked_inventory_expanded": false,
+  "module": "scripts/flux_identity.py",
+  "module_functions": ["potential", "fluxes", "divergence", "ledger", "main"],
+  "executed_by_tests": ["potential", "fluxes", "divergence", "ledger"],
+  "not_executed_by_tests": ["main", "one_dimensional pairing helpers", "gasket_* scripts", "CLI entrypoints", "witness.json write path"],
+  "test_files": ["tests/test_flux_identity.py"],
+  "test_methods_exercised": ["test_divergence_free_witness_matches_readme", "test_theorem_a_on_random_integer_flux", "test_boundary_source_matches_added_edge"],
+  "witness": "Unittest suite constructs integer potential, computes fluxes and divergence, and asserts signed boundary flux equals summed divergence (net=0 for div-free, net=17 for boundary source). Exact integer arithmetic; no continuum, no selected W, no thrust.",
+  "local_test": "python -m unittest tests/test_flux_identity.py (structure verified; not re-executed in this agent environment)",
+  "not_claimed": [
+    "physical correctness of Coherence Drive residual",
+    "continuum limit",
+    "selected W or thrust prediction",
+    "claim_cap assignment or elevation",
+    "full function census of gasket scripts",
+    "experimental validation"
+  ]
+}

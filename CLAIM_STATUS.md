@@ -21,7 +21,7 @@
 |-------|--------|
 | Matrix caps are complete for the current live portfolio | **UNSUPPORTED** — live search total_count **83** (reconfirmed 2026-10-26); JSON inventory_count locked at **67** |
 | The 15+ missing names have a cluster or claim cap | **NOT ASSIGNED** (`cluster` and `claim_cap` are null) |
-| Portfolio-wide per-function census | NOT PERFORMED — Sweep-210 audits scale-functional-I; Sweep-529 audits Digital_Double_virtual_workforce core methods only |
+| Portfolio-wide per-function census | NOT PERFORMED — Sweep-210 audits scale-functional-I; Sweep-529 audits Digital_Double_virtual_workforce core methods only; Sweep-532 audits informational-flux-identity core methods only |
 | Runtime interop of Sunder / SEEM / VSA / CFT | NOT CLAIMED |
 | Physical correctness of Coherence Drive / Ware artifacts | NOT CLAIMED |
 | Equivalence of Digital Double or SEEM name forks | NOT CLAIMED |
@@ -48,10 +48,10 @@ Not a cap refresh. `matrix/census_gap_2026-10-02.json` records GitHub search `us
 
 Not a cap refresh. `matrix/function_audit_scale_functional_I.json` records the `scale-functional-I` head `9768280b4d6eb039defa7072cabf243f3e3740b2`. Tests import and execute `dumbbell_mask` and `perimeter` only. `main` is not executed by tests. `cluster` and `claim_cap` stay null. Locked inventory remains 67. Local witness: `python3 -m unittest tests.test_scale_functional` → 1 test OK. No continuum, selected W, thrust, or 0.08 comparison is claimed.
 
-## Sweep-409 name observation (2026-10-17)
-
-Not a cap refresh. Live GitHub search `user:beyond-repair` reconfirmed `total_count=83`, `incomplete_results=false`. Set difference versus the 2026-10-02 observed list is empty (no names added or removed). Missing-from-lock count remains 16. `cluster` and `claim_cap` stay null. Locked inventory remains 67. Engine continues to report the 2026-10-01 gap. Classification remains RESEARCH. No claim elevation.
-
 ## Sweep-529 function audit (2026-10-26)
 
 Not a cap elevation. `matrix/function_audit_Digital_Double_virtual_workforce.json` records head `ad0c3bd7328a9e7917b8f6ac0143a4f68429ebea`. Tests execute Agent status machine (assign_task, complete_task), performance metrics, get_model_name, get_system_prompt, and Orchestrator.create_*. No LLM inference or external API calls are executed. Existing locked claim_cap TREE_PRESENT_FUNCTIONS_UNAUDITED is unchanged. Locked inventory remains 67. No production runtime claimed.
+
+## Sweep-532 function audit (2026-10-26)
+
+Not a cap assignment or elevation. `matrix/function_audit_informational_flux_identity.json` records head `cec4aff731cef6bb581c318f736de79d68d90b1f`. Tests execute potential, fluxes, divergence, and ledger on the integer rectangle witness. Asserts signed boundary flux equals summed divergence. Exact integer arithmetic only. `cluster` and `claim_cap` remain null. Locked inventory remains 67. Name stays in unassigned gap. No continuum, selected W, or thrust claimed.
